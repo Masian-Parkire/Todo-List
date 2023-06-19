@@ -59,7 +59,7 @@ function addTask(newTask) {
       const taskElement = createTaskElement(data);
       taskList.appendChild(taskElement);
       newTaskInput.value = '';
-      showSuccessMessage('New task added');
+      showSuccessMessage('New todo task  added');
     })
     .catch(error => console.error(error));
 }
@@ -89,7 +89,7 @@ function deleteTask(li, taskId) {
     .then(response => response.json())
     .then(data => {
       li.remove();
-      showSuccessMessage('Task deleted successfully');
+      showSuccessMessage('Todo task deleted successfully');
     })
     .catch(error => console.error(error));
 }
