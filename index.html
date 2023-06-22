@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+     <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-  <div class="todo-list">
-    <h1>Masian's Todo List</h1>
-    <form id="form">
-      <input type="text" id="new-task" placeholder="Enter a new task" required>
-      <button type="submit" class="add-btn">Add Task</button>
+    <form class="form" id="form">
+    <h1>To-Do List</h1>
+  <input id="taskId" type="number" placeholder="User Id">
+  <span><button id="add" type="button">Add</button></span>
+  <br><br>
+  <ul id="taskList"></ul>
+  <button id="button2" type="button">Delete Tasks</button>
+  <div id="successMessage"></div>
     </form>
-    <ul id="task-list"></ul>
-  </div>
-  <script src="todo.js"></script>
+    <script src="todo.js"></script>
 </body>
 
-</html>
+
+
+
+
+
+
+
